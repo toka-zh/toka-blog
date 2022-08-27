@@ -1,7 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://tokaz.cn/'
 languageCode = 'zh-CN'
 title = 'Toka的小窝'
-theme = 'maupassant'
+theme: "PaperMod"
 
 
 [author]
