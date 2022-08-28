@@ -51,5 +51,35 @@ categories: ["LeetCode"]
 
 ## 思路
 
+1. 数组有序
+2. 负数平方可能大于正数
+
+可以首尾设置指针,比较 指向数 的 平方数 大小,将较大的插入到结果集前段
+或者 可以比较数的绝对值后,再求平方
+没有什么太大区别,第二种可以稍微减少计算量(没错 力扣分奴在此)
+
 ## 解法
 
+O(n log(n))暴力遍历即可
+
+### O(n)
+
+```go
+func sortedSquares(nums []int) []int {
+    result := make([]int,len(nums))
+    j := len(nums)-1
+    i := 0
+    idx := j
+    for i<=j {
+        if nums[j] + nums[i] < 0{
+            result[idx] = nums[i] * nums[i]
+            i++
+        }else{
+            result[idx] = nums[j] * nums[j]
+            j--
+        }
+        idx --
+    }
+    return result
+}
+```
