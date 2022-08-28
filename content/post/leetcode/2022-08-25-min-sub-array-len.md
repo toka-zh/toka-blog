@@ -1,11 +1,9 @@
 ---
-title: "4.长度最小的子数组"
+title: "长度最小的子数组"
 date: 2022-08-24T15:17:58+08:00
-tags: ["leetcode"]
+tags: ["LeetCode"]
 categories: ["LeetCode"]
 ---
-
-
 
 ## 209.长度最小的子数组
 

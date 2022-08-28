@@ -1,11 +1,11 @@
 ---
-title: "2.移除元素"
+title: "移除元素"
 date: 2022-08-20T05:30:58+08:00
-tags: ["leetcode"]
+tags: ["LeetCode"]
 categories: ["LeetCode"]
 ---
 
-## 27. 移除元素
+## 27.移除元素
 
 [力扣题目链接](https://leetcode.cn/problems/remove-element/)
 

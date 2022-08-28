@@ -1,7 +1,7 @@
 ---
-title: "3.有序数组的平方"
+title: "有序数组的平方"
 date: 2022-08-24T10:38:58+08:00
-tags: ["leetcode"]
+tags: ["LeetCode"]
 categories: ["LeetCode"]
 ---
 

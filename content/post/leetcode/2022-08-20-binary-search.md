@@ -1,11 +1,11 @@
 ---
-title: "1.二分查找"
+title: "二分查找"
 date: 2022-08-20T05:24:55+08:00
-tags: ["leetcode"]
+tags: ["LeetCode"]
 categories: ["LeetCode"]
 ---
 
-## 704二分查找
+## 704.二分查找
 
 [力扣题目链接](https://leetcode.cn/problems/binary-search/)
 

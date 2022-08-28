@@ -1,3 +1,10 @@
+---
+title: "ETH"
+date: 2022-05-20
+tags: ["BlockChain"]
+categories: ["BlockChain"]
+---
+
 相较于比特币,以太坊的出块时间大幅度降低到了十几秒,并且设计了基于GHOST协议的共识机制,挖矿使用的minign puzzle,比特币的基于算力,导致了挖矿机器的专业化,以太坊的 memory hard mining puzzle,proof of work(工作量证明) 挖矿,将来改为 proof of stake(权益证明) 按照持有量证明,除此之外 以太坊增加了对智能合约的支持 smart contract 
 
 比特币实现了去中心化的货币是数字黄金
