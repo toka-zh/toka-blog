@@ -35,66 +35,67 @@ deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 inde
     操作次数将在  [1, 1000] 之内。
     请不要使用内置的 LinkedList 库。
 
+
 ## 解法
 ```go
 type MyLinkedList struct {
-    val  int
-    next *MyLinkedList
+	val  int
+	next *MyLinkedList
 }
 
 func Constructor() MyLinkedList {
-    return MyLinkedList{val: -1}
+	return MyLinkedList{val: -1}
 }
 
 func (this *MyLinkedList) Get(index int) int {
-    ptr := this
-    for i := 0; i <= index; i++ {
-        if ptr == nil || ptr.next == nil {
-            return -1
-        }
-        ptr = ptr.next
-    }
-    if ptr == nil {
-        return -1
-    }
-    return ptr.val
+	ptr := this
+	for i := 0; i <= index; i++ {
+		if ptr == nil || ptr.next == nil {
+			return -1
+		}
+		ptr = ptr.next
+	}
+	if ptr == nil {
+		return -1
+	}
+	return ptr.val
 }
 
 func (this *MyLinkedList) AddAtHead(val int) {
-    this.next = &MyLinkedList{val: val, next: this.next}
+	this.next = &MyLinkedList{val: val, next: this.next}
 }
 
 func (this *MyLinkedList) AddAtTail(val int) {
-ptr := this
-for ptr.next != nil {
-ptr = ptr.next
-}
-ptr.next = &MyLinkedList{val: val}
+	ptr := this
+	for ptr.next != nil {
+		ptr = ptr.next
+	}
+	ptr.next = &MyLinkedList{val: val}
 }
 
 func (this *MyLinkedList) AddAtIndex(index int, val int) {
-ptr := this
-for i := 0; i < index; i++ {
-if ptr == nil || ptr.next == nil {
-return
-}
-ptr = ptr.next
-}
-ptr.next = &MyLinkedList{val: val, next: ptr.next}
+	ptr := this
+	for i := 0; i < index; i++ {
+		if ptr == nil || ptr.next == nil {
+			return
+		}
+		ptr = ptr.next
+	}
+	ptr.next = &MyLinkedList{val: val, next: ptr.next}
 }
 
 func (this *MyLinkedList) DeleteAtIndex(index int) {
-ptr := this
-for i := 0; i < index; i++ {
-if ptr == nil || ptr.next == nil {
-return
-}
-ptr = ptr.next
-}
-if ptr.next == nil {
-return
-}
-ptr.next = ptr.next.next
+	ptr := this
+	for i := 0; i < index; i++ {
+		if ptr == nil || ptr.next == nil {
+			return
+		}
+		ptr = ptr.next
+	}
+	if ptr.next == nil {
+		return
+	}
+	ptr.next = ptr.next.next
 }
 
 /**
